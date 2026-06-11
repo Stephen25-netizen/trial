@@ -86,13 +86,12 @@ body {
     color: #ffffff !important;
     border-radius: 2px;
 }
-
-/* --- Inner Page Universal Header Banners (Screenshot Specifications) --- */
+/* --- Inner Page Universal Header Banners --- */
 .page-header-banner {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 110px 20px; /* Provides matching whitespace scale from design */
+    padding: 110px 20px;
     min-height: 320px;
     display: flex;
     align-items: center;
@@ -101,10 +100,18 @@ body {
     position: relative;
 }
 
-/* Base style variant incorporating your infrastructure roadmap image asset */
+/* Updated Surveying Infrastructure Banner */
 .about-banner-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=1400');
+    background-image: linear-gradient(rgba(10, 77, 104, 0.7), rgba(10, 77, 104, 0.7)), 
+                      url('https://images.unsplash.com/photo-1581094794329-c8112a4722b5?q=80&w=1600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+
+
 
 .page-banner-title {
     font-family: 'Cinzel', serif;
