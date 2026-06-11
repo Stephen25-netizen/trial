@@ -87,6 +87,58 @@ body {
     border-radius: 2px;
 }
 
+/* --- Inner Page Universal Header Banners (Screenshot Specifications) --- */
+.page-header-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 110px 20px; /* Provides matching whitespace scale from design */
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Base style variant incorporating your infrastructure roadmap image asset */
+.about-banner-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=1400');
+}
+
+.page-banner-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 3.2rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Orange underline accent directly anchoring header content elements */
+.banner-orange-line {
+    width: 90px;
+    height: 3.5px;
+    background-color: var(--brand-orange);
+    margin: 0 auto;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .page-header-banner {
+        padding: 70px 15px;
+        min-height: 240px;
+    }
+    .page-banner-title {
+        font-size: 2.2rem;
+    }
+    .banner-orange-line {
+        width: 70px;
+        height: 3px;
+    }
+}
+
 /* --- Carousel Banner Components --- */
 .carousel-item {
     height: 65vh;
