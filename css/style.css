@@ -3,13 +3,16 @@
    ========================================================================== */
 
    :root {
-    --primary-blue: #0A4D68;       /* Anchor deep slate blue foundation */
-    --secondary-blue: #088395;     /* Accent ocean blue */
-    --light-blue-tint: #f4f9f1;    /* Ultra clean background highlight tint */
-    --light-bg: #F8F9FA;           
-    --brand-orange: #f26522;       /* Bright warning / Callout Identity orange */
-    --brand-orange-hover: #d45316; /* Clean darker tone for link actions hover */
-    --dark-charcoal: #1a1a1a;
+    --primary-blue: #0A4D68;
+    --secondary-blue: #088395;
+    --brand-orange: #f26522;
+    --brand-orange-hover: #d45316;
+    /* Updated Dark Variables */
+    --dark-bg: #000000;
+    --section-bg: #0a0a0a;
+    --card-bg: #121212;
+    --text-main: #e0e0e0;
+    --text-muted: #aaaaaa;
 }
 
 html {
@@ -318,7 +321,7 @@ body {
     gap: 25px;
 }
 .service-card {
-    background-color: #ffffff;
+    background-color:#000000;;
     padding: 45px 35px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
     position: relative;
@@ -545,6 +548,7 @@ body {
     margin-top: 3px;
     line-height: 1;
 }
+
 .footer-brand-statement {
     font-size: 0.9rem;
     line-height: 1.7;
@@ -621,4 +625,140 @@ body {
 @media (max-width: 768px) {
     .services-grid { grid-template-columns: 1fr; }
     .cta-banner-text { font-size: 1.5rem; }
+} 
+/* ================================
+   CONTACT PAGE BLACK/ORANGE THEME
+================================ */
+
+/* Body */
+body{
+    background: #050505 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Navbar */
+.navbar{
+    background: #050505 !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,.3);
+}
+
+.navbar .nav-link{
+    color:#ffffff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+    color:#f26522 !important;
+}
+
+/* Hero section */
+.bg-primary{
+    background:
+    linear-gradient(
+        rgba(5,5,5,.75),
+        rgba(5,5,5,.75)
+    ),
+    url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=1200')
+    center/cover !important;
+}
+
+/* Main white cards */
+.bg-white{
+    background:#121212 !important;
+    color:#e0e0e0 !important;
+    border:1px solid rgba(242,101,34,.15);
+}
+
+/* Text */
+h1,h2,h3,h4,h5,h6{
+    color:#ffffff !important;
+}
+
+.text-muted{
+    color:#aaaaaa !important;
+}
+
+/* Form inputs */
+.form-control{
+    background:#1a1a1a !important;
+    border:1px solid #333 !important;
+    color:#ffffff !important;
+}
+
+.form-control:focus{
+    background:#1a1a1a !important;
+    color:#ffffff !important;
+    border-color:#f26522 !important;
+    box-shadow:0 0 0 .2rem rgba(242,101,34,.15);
+}
+
+.form-control::placeholder{
+    color:#777 !important;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-accent{
+    background:#f26522 !important;
+    border-color:#f26522 !important;
+    color:#fff !important;
+}
+
+.btn-primary:hover,
+.btn-accent:hover{
+    background:#d45316 !important;
+    border-color:#d45316 !important;
+}
+
+/* Map section */
+.bg-secondary{
+    background:#121212 !important;
+}
+
+/* Footer */
+footer{
+    background:#050505 !important;
+    border-top:3px solid #f26522;
+}
+
+footer h5{
+    color:#ffffff !important;
+}
+
+footer p,
+footer a,
+footer span,
+footer .text-muted{
+    color:#aaaaaa !important;
+}
+
+footer .text-info{
+    color:#f26522 !important;
+}
+
+footer a{
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#f26522 !important;
+}
+
+/* Back to top */
+#backToTop{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#0A4D68;
+    color:#fff;
+    font-size:20px;
+    z-index:999;
+}
+
+#backToTop:hover{
+    background:#f26522;
 }
